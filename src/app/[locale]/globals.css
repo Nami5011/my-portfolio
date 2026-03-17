@@ -8,7 +8,7 @@
   --font-inter: var(--font-inter);
   --font-noto-sans-jp: var(--font-noto-sans-jp);
   --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --foreground: #1D0506;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -101,7 +101,7 @@ body[lang='ja'] {
 
 .dark {
   --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
+  --foreground: #ffffff;
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
@@ -143,4 +143,8 @@ body[lang='ja'] {
   html {
     @apply font-sans;
   }
+}
+
+div {
+  transition: background 300ms cubic-bezier(1, 0.0, 0.4, 1);
 }
