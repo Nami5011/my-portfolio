@@ -1,18 +1,24 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Noto_Sans_JP, Inter, Onest } from "next/font/google";
 import {NextIntlClientProvider, hasLocale} from 'next-intl';
 import "./globals.css";
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 import { ThemeProvider } from 'next-themes'
+import { Locale } from "@/types/locale";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const notoSansJP = Noto_Sans_JP({
+  variable: "--font-noto-sans-jp",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+});
+
+const onest = Onest({
+  variable: "--font-onest",
   subsets: ["latin"],
 });
 
@@ -36,7 +42,7 @@ export default async function RootLayout({children, params}: Props) {
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${locale === Locale.JA ? notoSansJP.variable : inter.variable} ${onest.variable} antialiased`}
       >
         <NextIntlClientProvider>
           <ThemeProvider attribute="data-theme">
