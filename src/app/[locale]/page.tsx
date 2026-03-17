@@ -2,6 +2,7 @@ import {Link} from '@/i18n/navigation';
 import Image from "next/image";
 import { useLocale } from 'next-intl';
 import {useTranslations} from 'next-intl';
+import ThemeChanger from './_components/theme-changer';
 
 export default function Home() {
   const locale = useLocale();
@@ -29,6 +30,7 @@ export default function Home() {
           <p>
             <Link href="/" locale="en">Switch to English</Link>
           </p>
+          <ThemeChanger />
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
             Looking for a starting point or more instructions? Head over to{" "}
             <a
