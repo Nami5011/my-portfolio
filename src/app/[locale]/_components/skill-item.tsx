@@ -13,7 +13,7 @@ export default function SkillItem({ isChrome }: { isChrome: boolean }) {
       <div
         className="w-full h-full rounded-[5px] "
         style={{
-          backdropFilter: 'url(#liquidGlass)', // Only works in Chrome
+          backdropFilter: 'url(#liquidGlassSquare)', // Only works in Chrome
         }}
       >
         <label></label>

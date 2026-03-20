@@ -1,9 +1,7 @@
-import Image from 'next/image';
-
-export default function SkillItemFilter() {
+export default function SkillItemSquareFilter() {
   return (
     <svg className="hidden">
-      <filter id="liquidGlass" primitiveUnits="objectBoundingBox">
+      <filter id="liquidGlassSquare" primitiveUnits="objectBoundingBox">
         <feImage
           x="0"
           y="0"
