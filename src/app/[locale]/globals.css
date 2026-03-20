@@ -1,6 +1,6 @@
-@import "tailwindcss";
-@import "tw-animate-css";
-@import "shadcn/tailwind.css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 :root {
@@ -8,7 +8,7 @@
   --font-inter: var(--font-inter);
   --font-noto-sans-jp: var(--font-noto-sans-jp);
   --background: oklch(1 0 0);
-  --foreground: #1D0506;
+  --foreground: #1d0506;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -39,11 +39,29 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --primary: #a52124;
+  --primary-hover: #7c181b;
+  /* custom colors */
+  --color-light-blue-c: #d0eef3;
+  --color-yellow-c: #f9f000;
+  --color-white-c: #ffffff;
+  --color-black-c: #1d0506;
+  --color-gray-c: #f5f5f5;
+  --skill: #ffffff;
 }
 
 [data-theme='dark'] {
-  --background: black;
-  --foreground: white;
+  --background: #262626;
+  --foreground: #ffffff;
+  --primary: #d65257;
+  --primary-hover: #df7c81;
+  /* custom colors */
+  --color-light-blue-c: #0b343b;
+  --color-yellow-c: #878200;
+  --color-white-c: #1d0506;
+  --color-black-c: #ffffff;
+  --color-gray-c: #171717;
+  --skill: #cccccc;
 }
 
 @theme inline {
@@ -89,6 +107,14 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+
+  /* custom colors */
+  --color-light-blue-c: var(--color-light-blue-c);
+  --color-yellow-c: var(--color-yellow-c);
+  --color-white-c: var(--color-white-c);
+  --color-black-c: var(--color-black-c);
+  --color-gray-c: var(--color-gray-c);
+  --color-skill: var(--skill);
 }
 
 body {
@@ -145,6 +171,10 @@ body[lang='ja'] {
   }
 }
 
-div {
-  transition: background 300ms cubic-bezier(1, 0.0, 0.4, 1);
+div,
+main,
+header,
+footer,
+section {
+  transition: background 300ms cubic-bezier(1, 0, 0.4, 1);
 }
