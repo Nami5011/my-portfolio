@@ -18,4 +18,4 @@ export const statuses: Record<Locale, LocaleItem> = {
     id: Locale.JA,
     name: 'Japanese',
   },
-}
+};
