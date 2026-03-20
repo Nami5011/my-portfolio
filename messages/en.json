@@ -1,5 +1,25 @@
 {
+  "Header": {
+    "contact": "Contact",
+    "resume": "Resume",
+    "switchLanguage": "Japanese"
+  },
   "HomePage": {
-    "title": "Hello world!"
+    "meta_title": "Nami Sawada - Full-stack Web Developer",
+    "meta_description": "I’m Nami Sawada, a full-stack web developer who helps you improve UX, increase sales, and boost customer satisfaction.",
+    "title": "Better UX.\nMore sales.\nHappier customers.",
+    "subtitle1": "I’m ",
+    "subtitle2": "Nami Sawada",
+    "subtitle3": ", and I help you achieve this.",
+    "contact": "Contact",
+    "about": {
+      "name": "Nami Sawada",
+      "occupation": "Web Developer",
+      "description": "I’m a curious, results-driven web developer who enjoys tackling difficult challenges. I specialise in improving UI/UX and optimising SEO. Nothing motivates me more than seeing CVR increase and users satisfied with the product I work on.\n\nCurrently, I’m based in Bergen, Norway, working as an SEO manager and a marketer at Alt Japansk AS while pursuing a degree in IU International University online.\n\nPreviously, I lived in Tokyo and worked as a web developer for clients, including a fast-paced international startup and large Japanese companies. There, I worked closely with designers and their clients, bridging the gap between ideas and systems.\n\nOutside of work, you can find me hiking on the fjords, running outside at dawn, or having a cake and coffee with my friends at a cafe 🍰"
+    },
+    "skills": {
+      "heading": "Skills",
+      "description": "I have a wide range of skills from working with clients in various environments, from legacy systems to modern technologies. Here are some of the tools and technologies I use."
+    }
   }
 }
