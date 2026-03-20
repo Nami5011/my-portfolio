@@ -1,0 +1,11 @@
+/* custom styles */
+.theme-switcher-bg {
+  background:
+    linear-gradient(#f7f7f7, #f7f7f7) padding-box,
+    linear-gradient(129deg, #fff 16.48%, #a0a0a0 50%, #fff 83.52%) border-box;
+}
+[data-theme='dark'] .theme-switcher-bg {
+  background:
+    linear-gradient(#222, #222) padding-box,
+    linear-gradient(129deg, #fff 16.48%, #a0a0a0 50%, #fff 83.52%) border-box;
+}
