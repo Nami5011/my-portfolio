@@ -2,10 +2,12 @@ import type { Metadata } from 'next';
 import { Noto_Sans_JP, Inter, Onest } from 'next/font/google';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import './globals.css';
+import './globals.scss';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { ThemeProvider } from 'next-themes';
 import { Locale } from '@/types/locale';
+import Header from '@/components/ui/shared/header/header';
 
 const notoSansJP = Noto_Sans_JP({
   variable: '--font-noto-sans-jp',
@@ -44,7 +46,10 @@ export default async function RootLayout({ children, params }: Props) {
         className={`${locale === Locale.JA ? notoSansJP.variable : inter.variable} ${onest.variable} antialiased`}
       >
         <NextIntlClientProvider>
-          <ThemeProvider attribute="data-theme">{children}</ThemeProvider>
+          <ThemeProvider attribute="data-theme">
+            <Header />
+            {children}
+          </ThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html>
