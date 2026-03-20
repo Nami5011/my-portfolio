@@ -1,0 +1,177 @@
+[
+  {
+    "name": "Javascript",
+    "image_file": "js.svg",
+    "sp_flg": true
+  },
+  {
+    "name": "PHP",
+    "image_file": "php.svg",
+    "sp_flg": true
+  },
+  {
+    "name": "Next.js",
+    "image_file": "next.svg",
+    "sp_flg": true
+  },
+  {
+    "name": "HTML",
+    "image_file": "html.svg",
+    "sp_flg": true
+  },
+  {
+    "name": "Laravel",
+    "image_file": "laravel.svg",
+    "sp_flg": true
+  },
+  {
+    "name": "Git",
+    "image_file": "git.svg",
+    "sp_flg": true
+  },
+  {
+    "name": "Sass",
+    "image_file": "sass.svg",
+    "sp_flg": true
+  },
+  {
+    "name": "Redis",
+    "image_file": "redis.svg",
+    "sp_flg": true
+  },
+  {
+    "name": "React",
+    "image_file": "react.svg",
+    "sp_flg": true
+  },
+  {
+    "name": "Nuxt",
+    "image_file": "nuxt.svg",
+    "sp_flg": true
+  },
+  {
+    "name": "Typescript",
+    "image_file": "ts.svg",
+    "sp_flg": true
+  },
+  {
+    "name": "Supabase",
+    "image_file": "supabase.svg",
+    "sp_flg": true
+  },
+  {
+    "name": "MySQL",
+    "image_file": "mysql.svg",
+    "sp_flg": true
+  },
+  {
+    "name": "CSS",
+    "image_file": "css.svg",
+    "sp_flg": true
+  },
+  {
+    "name": "CakePHP",
+    "image_file": "cakephp.svg",
+    "sp_flg": true
+  },
+  {
+    "name": "Vue.js",
+    "image_file": "vue.svg",
+    "sp_flg": true
+  },
+  {
+    "name": "GitHub",
+    "image_file": "github.svg",
+    "sp_flg": false
+  },
+  {
+    "name": "Bootstrap",
+    "image_file": "bootstrap.svg",
+    "sp_flg": true
+  },
+  {
+    "name": "Shopify",
+    "image_file": "shopify.svg",
+    "sp_flg": true
+  },
+  {
+    "name": "Figma",
+    "image_file": "figma.svg",
+    "sp_flg": true
+  },
+  {
+    "name": "Liquid",
+    "image_file": "liquid.svg",
+    "sp_flg": true
+  },
+  {
+    "name": "Docker",
+    "image_file": "docker.svg",
+    "sp_flg": true
+  },
+  {
+    "name": "WordPress",
+    "image_file": "wp.svg",
+    "sp_flg": true
+  },
+  {
+    "name": "Tailwind",
+    "image_file": "tailwind.svg",
+    "sp_flg": true
+  },
+  {
+    "name": "AWS",
+    "image_file": "aws.svg",
+    "sp_flg": true
+  },
+  {
+    "name": "PostgreSQL",
+    "image_file": "postgresql.svg",
+    "sp_flg": true
+  },
+  {
+    "name": "PostgreSQL",
+    "image_file": "postgresql.svg",
+    "sp_flg": true
+  },
+  {
+    "name": "NextJS",
+    "image_file": "nest.svg",
+    "sp_flg": true
+  },
+  {
+    "name": "AngularJS",
+    "image_file": "angularjs.svg",
+    "sp_flg": false
+  },
+  {
+    "name": "MJML",
+    "image_file": "mjml.svg",
+    "sp_flg": false
+  },
+  {
+    "name": "MariaDB",
+    "image_file": "mariadb.svg",
+    "sp_flg": true
+  },
+  {
+    "name": "GSAP",
+    "image_file": "gsap.svg",
+    "sp_flg": true
+  },
+  {
+    "name": "jQuery",
+    "image_file": "jquery.svg",
+    "sp_flg": false
+  },
+  {
+    "name": "GraphQL",
+    "image_file": "graphql.svg",
+    "sp_flg": true
+  },
+  {
+    "name": "Strapi",
+    "image_file": "strapi.svg",
+    "sp_flg": true
+  }
+]
