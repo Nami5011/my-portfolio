@@ -1,177 +1,240 @@
-[
-  {
-    "name": "Javascript",
-    "image_file": "js.svg",
-    "sp_flg": true
-  },
-  {
-    "name": "PHP",
-    "image_file": "php.svg",
-    "sp_flg": true
-  },
-  {
-    "name": "Next.js",
-    "image_file": "next.svg",
-    "sp_flg": true
-  },
-  {
-    "name": "HTML",
-    "image_file": "html.svg",
-    "sp_flg": true
-  },
-  {
-    "name": "Laravel",
-    "image_file": "laravel.svg",
-    "sp_flg": true
-  },
-  {
-    "name": "Git",
-    "image_file": "git.svg",
-    "sp_flg": true
-  },
-  {
-    "name": "Sass",
-    "image_file": "sass.svg",
-    "sp_flg": true
-  },
-  {
-    "name": "Redis",
-    "image_file": "redis.svg",
-    "sp_flg": true
-  },
-  {
-    "name": "React",
-    "image_file": "react.svg",
-    "sp_flg": true
-  },
-  {
-    "name": "Nuxt",
-    "image_file": "nuxt.svg",
-    "sp_flg": true
-  },
-  {
-    "name": "Typescript",
-    "image_file": "ts.svg",
-    "sp_flg": true
-  },
-  {
-    "name": "Supabase",
-    "image_file": "supabase.svg",
-    "sp_flg": true
-  },
-  {
-    "name": "MySQL",
-    "image_file": "mysql.svg",
-    "sp_flg": true
-  },
-  {
-    "name": "CSS",
-    "image_file": "css.svg",
-    "sp_flg": true
-  },
-  {
-    "name": "CakePHP",
-    "image_file": "cakephp.svg",
-    "sp_flg": true
-  },
-  {
-    "name": "Vue.js",
-    "image_file": "vue.svg",
-    "sp_flg": true
-  },
-  {
-    "name": "GitHub",
-    "image_file": "github.svg",
-    "sp_flg": false
-  },
-  {
-    "name": "Bootstrap",
-    "image_file": "bootstrap.svg",
-    "sp_flg": true
-  },
-  {
-    "name": "Shopify",
-    "image_file": "shopify.svg",
-    "sp_flg": true
-  },
-  {
-    "name": "Figma",
-    "image_file": "figma.svg",
-    "sp_flg": true
-  },
-  {
-    "name": "Liquid",
-    "image_file": "liquid.svg",
-    "sp_flg": true
-  },
-  {
-    "name": "Docker",
-    "image_file": "docker.svg",
-    "sp_flg": true
-  },
-  {
-    "name": "WordPress",
-    "image_file": "wp.svg",
-    "sp_flg": true
-  },
-  {
-    "name": "Tailwind",
-    "image_file": "tailwind.svg",
-    "sp_flg": true
-  },
-  {
-    "name": "AWS",
-    "image_file": "aws.svg",
-    "sp_flg": true
-  },
-  {
-    "name": "PostgreSQL",
-    "image_file": "postgresql.svg",
-    "sp_flg": true
-  },
-  {
-    "name": "PostgreSQL",
-    "image_file": "postgresql.svg",
-    "sp_flg": true
-  },
-  {
-    "name": "NextJS",
-    "image_file": "nest.svg",
-    "sp_flg": true
-  },
-  {
+{
+  "angular": {
     "name": "AngularJS",
     "image_file": "angularjs.svg",
-    "sp_flg": false
+    "order": 32,
+    "categories": ["Frontend"],
+    "mb_flg": false
   },
-  {
-    "name": "MJML",
-    "image_file": "mjml.svg",
-    "sp_flg": false
+  "aws": {
+    "name": "AWS",
+    "image_file": "aws.svg",
+    "order": 19,
+    "categories": ["Backend"],
+    "mb_flg": true
   },
-  {
-    "name": "MariaDB",
-    "image_file": "mariadb.svg",
-    "sp_flg": true
+  "bootstrap": {
+    "name": "Bootstrap",
+    "image_file": "bootstrap.svg",
+    "order": 9,
+    "categories": ["Frontend"],
+    "mb_flg": true
   },
-  {
-    "name": "GSAP",
-    "image_file": "gsap.svg",
-    "sp_flg": true
+  "cakephp": {
+    "name": "CakePHP",
+    "image_file": "cakephp.svg",
+    "order": 15,
+    "categories": ["Backend"],
+    "mb_flg": true
   },
-  {
-    "name": "jQuery",
-    "image_file": "jquery.svg",
-    "sp_flg": false
+  "css": {
+    "name": "CSS",
+    "image_file": "css.svg",
+    "order": 7,
+    "categories": ["Frontend"],
+    "mb_flg": true
   },
-  {
+  "docker": {
+    "name": "Docker",
+    "image_file": "docker.svg",
+    "order": 27,
+    "categories": [],
+    "mb_flg": true
+  },
+  "figma": {
+    "name": "Figma",
+    "image_file": "figma.svg",
+    "order": 25,
+    "categories": ["Design"],
+    "mb_flg": true
+  },
+  "git": {
+    "name": "Git",
+    "image_file": "git.svg",
+    "order": 28,
+    "categories": [],
+    "mb_flg": true
+  },
+  "github": {
+    "name": "GitHub",
+    "image_file": "github.svg",
+    "order": 29,
+    "categories": [],
+    "mb_flg": false
+  },
+  "graphql": {
     "name": "GraphQL",
     "image_file": "graphql.svg",
-    "sp_flg": true
+    "order": 23,
+    "categories": ["Backend"],
+    "mb_flg": true
   },
-  {
+  "gsap": {
+    "name": "GSAP",
+    "image_file": "gsap.svg",
+    "order": 26,
+    "categories": ["Frontend"],
+    "mb_flg": true
+  },
+  "html": {
+    "name": "HTML",
+    "image_file": "html.svg",
+    "order": 2,
+    "categories": ["Frontend"],
+    "mb_flg": true
+  },
+  "jquery": {
+    "name": "jQuery",
+    "image_file": "jquery.svg",
+    "order": 30,
+    "categories": ["Frontend"],
+    "mb_flg": false
+  },
+  "js": {
+    "name": "Javascript",
+    "image_file": "js.svg",
+    "order": 0,
+    "categories": ["Frontend", "Backend"],
+    "mb_flg": true
+  },
+  "laravel": {
+    "name": "Laravel",
+    "image_file": "laravel.svg",
+    "order": 16,
+    "categories": ["Backend"],
+    "mb_flg": true
+  },
+  "liquid": {
+    "name": "Liquid",
+    "image_file": "liquid.svg",
+    "order": 11,
+    "categories": ["Backend"],
+    "mb_flg": true
+  },
+  "mariadb": {
+    "name": "MariaDB",
+    "image_file": "mariadb.webp",
+    "order": 24,
+    "categories": ["Backend"],
+    "mb_flg": true
+  },
+  "mjml": {
+    "name": "MJML",
+    "image_file": "mjml.svg",
+    "order": 31,
+    "categories": ["Frontend"],
+    "mb_flg": false
+  },
+  "mysql": {
+    "name": "MySQL",
+    "image_file": "mysql.svg",
+    "order": 18,
+    "categories": ["Backend"],
+    "mb_flg": true
+  },
+  "nest": {
+    "name": "NextJS",
+    "image_file": "nest.svg",
+    "order": 17,
+    "categories": ["Backend"],
+    "mb_flg": true
+  },
+  "next": {
+    "name": "Next.js",
+    "image_file": "next.svg",
+    "order": 1,
+    "categories": ["Frontend", "Backend"],
+    "mb_flg": true
+  },
+  "nuxt": {
+    "name": "Nuxt",
+    "image_file": "nuxt.svg",
+    "order": 3,
+    "categories": ["Frontend", "Backend"],
+    "mb_flg": true
+  },
+  "php": {
+    "name": "PHP",
+    "image_file": "php.svg",
+    "order": 14,
+    "categories": ["Backend"],
+    "mb_flg": true
+  },
+  "postgresql": {
+    "name": "PostgreSQL",
+    "image_file": "postgresql.svg",
+    "order": 22,
+    "categories": ["Backend"],
+    "mb_flg": true
+  },
+  "react": {
+    "name": "React",
+    "image_file": "react.svg",
+    "order": 4,
+    "categories": ["Frontend"],
+    "mb_flg": true
+  },
+  "redis": {
+    "name": "Redis",
+    "image_file": "redis.svg",
+    "order": 21,
+    "categories": ["Backend"],
+    "mb_flg": true
+  },
+  "sass": {
+    "name": "Sass",
+    "image_file": "sass.svg",
+    "order": 8,
+    "categories": ["Frontend"],
+    "mb_flg": true
+  },
+  "shopify": {
+    "name": "Shopify",
+    "image_file": "shopify.svg",
+    "order": 10,
+    "categories": [],
+    "mb_flg": true
+  },
+  "strapi": {
     "name": "Strapi",
     "image_file": "strapi.svg",
-    "sp_flg": true
+    "order": 14,
+    "categories": ["Frontend"],
+    "mb_flg": true
+  },
+  "supabase": {
+    "name": "Supabase",
+    "image_file": "supabase.svg",
+    "order": 20,
+    "categories": ["Backend"],
+    "mb_flg": true
+  },
+  "tailwind": {
+    "name": "Tailwind",
+    "image_file": "tailwind.svg",
+    "order": 13,
+    "categories": ["Frontend"],
+    "mb_flg": true
+  },
+  "ts": {
+    "name": "Typescript",
+    "image_file": "ts.svg",
+    "order": 6,
+    "categories": ["Frontend", "Backend"],
+    "mb_flg": true
+  },
+  "vue": {
+    "name": "Vue.js",
+    "image_file": "vue.webp",
+    "order": 5,
+    "categories": ["Frontend"],
+    "mb_flg": true
+  },
+  "wp": {
+    "name": "WordPress",
+    "image_file": "wp.svg",
+    "order": 12,
+    "categories": ["Frontend", "Backend"],
+    "mb_flg": true
   }
-]
+}
