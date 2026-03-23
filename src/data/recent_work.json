@@ -1,0 +1,38 @@
+[
+  {
+    "image_file": "altjapansk.webp",
+    "title": "recent_work.altjapansk.title",
+    "company_name": "recent_work.altjapansk.company_name",
+    "description": "recent_work.altjapansk.description",
+    "link_title": "alt-japansk.no",
+    "link_url": "https://www.alt-japansk.no",
+    "skills": ["liquid", "shopify", "css", "js"]
+  },
+  {
+    "image_file": "southamerica.webp",
+    "title": "recent_work.southamerica.title",
+    "company_name": "recent_work.southamerica.company_name",
+    "description": "recent_work.southamerica.description",
+    "link_title": "",
+    "link_url": "",
+    "skills": ["ts", "next", "react", "tailwind", "nest"]
+  },
+  {
+    "image_file": "fullstack.webp",
+    "title": "recent_work.fullstack.title",
+    "company_name": "recent_work.fullstack.company_name",
+    "description": "recent_work.fullstack.description",
+    "link_title": "",
+    "link_url": "",
+    "skills": ["js", "cakephp", "mariadb", "laravel", "redis", "wp"]
+  },
+  {
+    "image_file": "mimanakiel.png",
+    "title": "recent_work.mimanakiel.title",
+    "company_name": "recent_work.mimanakiel.company_name",
+    "description": "recent_work.mimanakiel.description",
+    "link_title": "mimanakiel.com",
+    "link_url": "https://mimanakiel.com",
+    "skills": ["wp", "js", "sass", "html"]
+  }
+]

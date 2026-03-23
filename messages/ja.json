@@ -19,7 +19,32 @@
     },
     "skills": {
       "heading": "スキル",
-      "description": "レガシーなシステムからモダンな技術までクライアントに合わせたスキルを磨いてきました。私が活用している技術スタックやツールをご紹介します。"
+      "description": "レガシーなシステムからモダンな技術までクライアント様の環境に応じて柔軟に対応可能です。私が活用している技術スタックやツールをご紹介します。"
+    },
+    "recent_work": {
+      "heading": "直近の実績",
+      "description": "SaaSシステムからB2Cアプリ開発、ビジュアル重視のハイグラフィックなWEBサイトまで幅広く対応しています。一部の実績のため全実績や詳細はお問合せください。",
+      "altjapansk": {
+        "title": "SEOマネジャー兼マーケター",
+        "company_name": "Alt Japansk AS",
+        "description": "ノルウェーで日本の食品や雑貨を扱うEコマースウェブサイト"
+      },
+      "southamerica": {
+        "title": "フロントエンドエンジニア",
+        "company_name": "",
+        "description": "AIの力でプロジェクトや人事、財務管理を最適化するSaaSシステム"
+      },
+      "fullstack": {
+        "title": "フルスタックエンジニア",
+        "company_name": "",
+        "description": "求人検索機能に加え、役立つコラムや記事などのコンテンツ、LPを通してユーザーとのエンゲージメントを強化したリクルーティングサイト"
+      },
+      "mimanakiel": {
+        "title": "WEBエンジニア",
+        "company_name": "Mimana Kiel",
+        "description": "ミニマリズムを意識したクリーンなモデルポートフォリオ\nDesign: Mimana & Nami\nDevelopment: Nami"
+      },
+      "see_resume": "履歴書"
     }
   }
 }

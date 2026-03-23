@@ -2,6 +2,7 @@ import { getTranslations } from 'next-intl/server';
 import SkillCategory from './skill-category';
 import SkillItems from './skill-items';
 import { SkillCategory as Category } from '@/types/skill-category';
+import H2 from './h2';
 
 export default async function Skills() {
   const t = await getTranslations('HomePage');
@@ -13,12 +14,7 @@ export default async function Skills() {
       bg-center bg-cover md:bg-[url('/images/skill_bg.svg')] md:dark:bg-[url('/images/skill_bg_dark.svg')]`}
     >
       <div className="px-4">
-        <h2 className="font-onest font-semibold text-4xl leading-none text-center mb-4">
-          {t('skills.heading')}
-        </h2>
-        <p className="max-w-121 text-[16px] leading-[1.2] text-center mb-8 mx-auto">
-          {t('skills.description')}
-        </p>
+        <H2 h2={t('skills.heading')} description={t('skills.description')} />
       </div>
 
       <SkillCategoryList />
@@ -29,7 +25,7 @@ export default async function Skills() {
 
 function SkillCategoryList() {
   return (
-    <div className="hidden w-full md:flex justify-center items-center gap-4 z-4 mb-8">
+    <div className="hidden w-full md:flex justify-center items-center gap-4 mb-8">
       <SkillCategory categoryName={Category.FRONTEND} />
       <SkillCategory categoryName={Category.BACKEND} />
       <SkillCategory categoryName={Category.DESIGN} />

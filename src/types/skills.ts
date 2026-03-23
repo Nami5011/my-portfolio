@@ -5,5 +5,6 @@ export interface Skill {
   image_file: string;
   order: number;
   categories: SkillCategory[];
+  padding_flg: boolean;
   mb_flg: boolean;
 }

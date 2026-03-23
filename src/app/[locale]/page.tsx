@@ -13,6 +13,7 @@ import About from './_components/about';
 import Skills from './_components/skills';
 import glass_filters from '@/data/glass_filters.json';
 import GlassFilter from './_components/glass-filter';
+import RecentWork from './_components/recent-work';
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('HomePage');
@@ -39,6 +40,7 @@ export default async function Home() {
       ))}
 
       <Skills />
+      <RecentWork />
     </main>
   );
 }
