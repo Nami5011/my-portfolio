@@ -2,12 +2,22 @@
 import { cn } from '@/lib/utils';
 import { Moon, SunDim } from 'lucide-react';
 import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
 
 export default function ThemeSwitcher({ className }: { className?: string }) {
   const { theme = 'light', setTheme } = useTheme();
   const switchTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return <div className="w-12.5 h-7"></div>;
+  }
 
   return (
     <button

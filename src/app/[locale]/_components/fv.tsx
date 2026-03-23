@@ -7,7 +7,7 @@ export default async function FV() {
   return (
     <section className="w-full h-[80vh] md:h-screen flex justify-center flex-col -mt-12.5 bg-[#D0EEF3] dark:bg-[#0B343B]">
       <div className="w-full max-w-270 mx-auto px-4 lg2:px-0">
-        <h1 className="font-onest max-w-xs text-[40px] md:text-[64px] font-extrabold leading-[120%] tracking-[-0.5%] whitespace-pre mb-4 md:mb-6">
+        <h1 className="font-onest text-[40px] md:text-[64px] font-extrabold leading-[120%] tracking-[-1%] md:tracking-[-0.5%] whitespace-pre-line mb-4 md:mb-6">
           {t('title')}
         </h1>
         <p className="text-xl md:text-2xl font-medium whitespace-pre-line mb-8 md:mb-12">

@@ -30,7 +30,7 @@ export default async function Header() {
             priority
           />
         </Link>
-        <div className="ml-auto flex items-center h-full">
+        <div className="hidden ml-auto md:flex items-center h-full">
           <Link
             href="/contact"
             className="px-4 h-full flex items-center text-[14px] hover:bg-gray-100 transition-background duration-200 dark:hover:bg-gray-800"
@@ -55,7 +55,7 @@ export default async function Header() {
             {t('switchLanguage')}
           </Link>
         </div>
-        <ThemeSwitcher />
+        <ThemeSwitcher className="hidden md:flex" />
       </div>
     </header>
   );
