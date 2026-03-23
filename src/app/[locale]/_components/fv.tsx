@@ -18,7 +18,7 @@ export default async function FV() {
         <PrimaryButtonLink
           href="/contact"
           message={t('contact')}
-          className="font-medium w-44.5 h-14 text-xl md:text-[22px] md:tracking-[2%]"
+          className="font-medium w-44.5 h-11.5 md:h-14 text-[18px] md:text-[22px] md:tracking-[2%]"
         />
       </div>
     </section>
