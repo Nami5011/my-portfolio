@@ -3,7 +3,7 @@ export default function GlassFilter({ id, href }: { id: string; href: string }) 
     <svg className="hidden">
       <filter id={id} primitiveUnits="objectBoundingBox">
         <feImage x="0" y="0" width="100%" height="100%" result="map" href={href} />
-        <feGaussianBlur in="SourceGraphic" stdDeviation="0.1" result="blur" />
+        <feGaussianBlur in="SourceGraphic" stdDeviation="0.05" result="blur" />
         <feDisplacementMap
           id="disp"
           in="blur"

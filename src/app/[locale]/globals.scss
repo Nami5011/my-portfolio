@@ -1,3 +1,6 @@
+@import '../../styles/mixins';
+@import '../../styles/breakpoints';
+
 /* custom styles */
 .theme-switcher-bg {
   background:
@@ -8,4 +11,11 @@
   background:
     linear-gradient(#222, #222) padding-box,
     linear-gradient(129deg, #fff 16.48%, #a0a0a0 50%, #fff 83.52%) border-box;
+}
+
+.xxs-px-2 {
+  @include breakpoint_xs(375px) {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 }

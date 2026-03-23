@@ -1,11 +1,4 @@
 {
-  "angular": {
-    "name": "AngularJS",
-    "image_file": "angularjs.svg",
-    "order": 32,
-    "categories": ["Frontend"],
-    "mb_flg": false
-  },
   "aws": {
     "name": "AWS",
     "image_file": "aws.svg",
@@ -55,13 +48,7 @@
     "categories": [],
     "mb_flg": true
   },
-  "github": {
-    "name": "GitHub",
-    "image_file": "github.svg",
-    "order": 29,
-    "categories": [],
-    "mb_flg": false
-  },
+
   "graphql": {
     "name": "GraphQL",
     "image_file": "graphql.svg",
