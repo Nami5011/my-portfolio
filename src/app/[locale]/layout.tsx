@@ -8,6 +8,7 @@ import { routing } from '@/i18n/routing';
 import { ThemeProvider } from 'next-themes';
 import { Locale } from '@/types/locale';
 import Header from '@/components/ui/shared/header/header';
+import Footer from '@/components/ui/shared/footer/footer';
 
 const notoSansJP = Noto_Sans_JP({
   variable: '--font-noto-sans-jp',
@@ -49,6 +50,7 @@ export default async function RootLayout({ children, params }: Props) {
           <ThemeProvider attribute="data-theme">
             <Header />
             {children}
+            <Footer />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
