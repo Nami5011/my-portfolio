@@ -3,6 +3,7 @@ import Image from 'next/image';
 import ThemeSwitcher from '@/components/ui/shared/header/theme-switcher';
 import { getLocale, getTranslations } from 'next-intl/server';
 import { Locale } from '@/types/locale';
+import SwitchLanguageLink from './switch-language-link';
 
 export default async function Header() {
   const locale = await getLocale();
@@ -47,13 +48,7 @@ export default async function Header() {
               {t('resume')}
             </Link>
           )}
-          <Link
-            href="/"
-            className="px-4 h-full flex items-center text-[14px] hover:bg-gray-100 transition-background duration-200 dark:hover:bg-gray-800"
-            locale={locale === Locale.EN ? Locale.JA : Locale.EN}
-          >
-            {t('switchLanguage')}
-          </Link>
+          <SwitchLanguageLink />
         </div>
         <ThemeSwitcher className="hidden md:flex" />
       </div>
