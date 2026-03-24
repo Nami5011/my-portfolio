@@ -19,7 +19,6 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function Home() {
   const locale = await getLocale();
   // const locale = useLocale();
-  console.log(locale);
   const t = await getTranslations('HomePage');
   // const t = useTranslations('HomePage');
 
