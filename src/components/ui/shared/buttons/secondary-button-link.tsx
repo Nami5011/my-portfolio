@@ -1,7 +1,7 @@
 import { Link } from '@/i18n/navigation';
 import { cn } from '@/lib/utils';
 
-export default function PrimaryButtonLink({
+export default function SecondaryButtonLink({
   href,
   message,
   className = '',
@@ -14,7 +14,7 @@ export default function PrimaryButtonLink({
     <Link
       href={href}
       className={cn(
-        'bg-primary text-white-c flex items-center justify-center rounded-[12px] transition-background duration-200 hover:bg-primary-hover',
+        'border border-secondary text-secondary flex items-center justify-center rounded-[12px] transition-background duration-200 hover:bg-secondary-hover',
         className,
       )}
     >

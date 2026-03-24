@@ -12,6 +12,7 @@ import { RecentWork as RecentWorkType } from '@/types/recent_work';
 import { useState, useEffect } from 'react';
 import PrimaryButtonLink from '@/components/ui/shared/buttons/primary-button-link';
 import { Locale } from '@/types/locale';
+import SecondaryButtonLink from '@/components/ui/shared/buttons/secondary-button-link';
 
 const skillList = skillListData as Record<string, Skill>;
 const recent_work = recentWorkData as RecentWorkType[];
@@ -38,10 +39,10 @@ export default function RecentWork() {
         ))}
       </div>
       {locale === Locale.EN && (
-        <PrimaryButtonLink
+        <SecondaryButtonLink
           href="/contact"
           message={t('recent_work.see_resume')}
-          className="w-62.5 h-11.5 md:h-14 text-[16px] md:text-xl mx-auto mt-13"
+          className="w-62.5 h-11.5 md:h-12.5 text-[16px] md:text-xl mx-auto mt-13"
         />
       )}
     </section>

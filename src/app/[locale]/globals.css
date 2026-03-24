@@ -41,6 +41,8 @@
   --sidebar-ring: oklch(0.708 0 0);
   /* custom colors */
   --color-primary-hover: #7c181b;
+  --color-secondary: #b01c23;
+  --color-secondary-hover: #fce9ea;
   --color-light-blue-c: #d0eef3;
   --color-yellow-c: #f9f000;
   --color-white-c: #ffffff;
@@ -56,6 +58,8 @@
   --primary: #d65257;
   /* custom colors */
   --color-primary-hover: #df7c81;
+  --color-secondary: #e34f56;
+  --color-secondary-hover: #2c0709;
   --color-light-blue-c: #0b343b;
   --color-yellow-c: #878200;
   --color-white-c: #1d0506;
@@ -114,6 +118,8 @@
 
   /* custom colors */
   --color-primary-hover: var(--color-primary-hover);
+  --color-secondary: var(--color-secondary);
+  --color-secondary-hover: var(--color-secondary-hover);
   --color-light-blue-c: var(--color-light-blue-c);
   --color-yellow-c: var(--color-yellow-c);
   --color-white-c: var(--color-white-c);
