@@ -45,6 +45,11 @@
         "description": "A modelling portfolio as a clean, minimalist website.\nDesign: Mimana & Nami\nDevelopment: Nami"
       },
       "see_resume": "See My Resume"
+    },
+    "cta_bottom": {
+      "heading": "Interested in\nworking together?",
+      "description": "Send a message or contact me on LinkedIn.",
+      "send_message": "Send Message"
     }
   }
 }

@@ -45,6 +45,11 @@
         "description": "ミニマリズムを意識したクリーンなモデルポートフォリオ\nDesign: Mimana & Nami\nDevelopment: Nami"
       },
       "see_resume": "履歴書"
+    },
+    "cta_bottom": {
+      "heading": "ご質問やご相談\nお伺いします",
+      "description": "お気軽にお問合せまたはLinkedInからDMください。",
+      "send_message": "お問合せ"
     }
   }
 }
