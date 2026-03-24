@@ -9,6 +9,7 @@ import { ThemeProvider } from 'next-themes';
 import { Locale } from '@/types/locale';
 import Header from '@/components/ui/shared/header/header';
 import Footer from '@/components/ui/shared/footer/footer';
+import { Toaster } from '@/components/ui/sonner';
 
 const notoSansJP = Noto_Sans_JP({
   variable: '--font-noto-sans-jp',
@@ -51,6 +52,7 @@ export default async function RootLayout({ children, params }: Props) {
             <Header />
             {children}
             <Footer />
+            <Toaster />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
