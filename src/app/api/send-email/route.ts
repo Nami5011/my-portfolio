@@ -9,7 +9,7 @@ import { createTranslator } from 'next-intl';
 import { NextRequest, NextResponse } from 'next/server';
 import { randomUUID } from 'node:crypto';
 const fromEmail = process.env.EMAIL_FROM || '';
-const ratelimit = createRateLimiter(5, '5 m', '/api/send-email');
+const ratelimit = createRateLimiter(5, '1 m', '/api/send-email');
 
 export async function POST(req: NextRequest) {
   try {
