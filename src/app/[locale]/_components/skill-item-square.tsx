@@ -7,10 +7,14 @@ export default function SkillItemSquare({
   src,
   name,
   spaceFlg,
+  className,
+  style,
 }: {
   src: string;
   name: string;
   spaceFlg: boolean;
+  className?: string;
+  style?: React.CSSProperties;
 }) {
   const [isChrome, setIsChrome] = useState(false);
   useEffect(() => {
@@ -22,7 +26,9 @@ export default function SkillItemSquare({
       className={cn(
         'size-6 md:size-15 rounded-[6px] p-px bg-[url(/images/skill_item_border2.svg)] bg-no-repeat bg-cover bg-center shadow-[0_0_6px_0_rgba(0,0,0,0.16)]',
         !isChrome && 'bg-white', // Backdrop-filter Fallback for non-Chrome browsers
+        className,
       )}
+      style={style}
     >
       <div className="w-full h-full rounded-[5px] flex items-center justify-center overflow-hidden dark:bg-[rgba(255,255,255,0.60)] backdrop-filter-[url(#liquidGlassSquare)]">
         <Image
