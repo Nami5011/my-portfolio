@@ -1,4 +1,54 @@
 {
+  "ContactPage": {
+    "meta_title": "Contact | Nami Sawada - Full-stack Web Developer",
+    "meta_description": "Contact Nami Sawada, a full-stack web developer who helps you improve UX, increase sales, and boost customer satisfaction.",
+    "title": "Contact Me",
+    "description": "I’m always open to discussing new projects, collaborations, or opportunities to be part of your visions. Feel free to reach out through the form below or connect with me on LinkedIn.",
+    "form": {
+      "send": "Send Message",
+      "name_required": "Name is required.",
+      "email_required": "Email is required.",
+      "email_invalid": "Enter a valid email address.",
+      "message_required": "Message is required.",
+      "submission_success": "Your message has been sent"
+    },
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message"
+    }
+  },
+  "EmailTemplate": {
+    "ContactConfirmation": {
+      "subject": "Thank you for contacting me",
+      "greeting": "Hello {name},",
+      "body": "Thank you for reaching out! I'll get back to you as soon as possible.",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "closing": "Best regards,\nNami Sawada",
+      "site_name": "Nami Sawada Portfolio Website"
+    },
+    "NewMessageNotification": {
+      "subject": "New message from {name}",
+      "body": "You have received a new message from {name} ({email}):",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "site_name": "Nami Sawada Portfolio Website"
+    }
+  },
+  "FormStatus": {
+    "sending": "Sending...",
+    "success": "Your message has been sent.",
+    "error": "An error occurred while sending your message."
+  },
+  "FormValidation": {
+    "too_long": "{field} must be at most {max} characters long",
+    "too_short": "{field} must be at least {min} characters long",
+    "required": "{field} is required",
+    "email_invalid": "Enter a valid email address"
+  },
   "Header": {
     "contact": "Contact",
     "resume": "Resume",

@@ -1,4 +1,57 @@
 {
+  "ContactPage": {
+    "meta_title": "お問合せ | 澤田奈美 - フルスタックWEBエンジニア",
+    "meta_description": "UX向上で売上・顧客満足度を引き上げるフルスタックWEBエンジニア 澤田奈美へのお問合せはこちらから。",
+    "title": "お問合せ",
+    "description": "新しいプロジェクトのご相談や、コラボレーションのご提案、その他お仕事のご依頼など、お気軽にご連絡ください。",
+    "form": {
+      "name": "お名前",
+      "email": "メールアドレス",
+      "message": "内容",
+      "send": "送信",
+      "name_required": "お名前は必須です",
+      "email_required": "メールアドレスは必須です",
+      "email_invalid": "有効なメールアドレスを入力してください",
+      "message_required": "内容は必須です",
+      "submission_success": "送信が完了しました"
+    },
+    "fields": {
+      "name": "お名前",
+      "email": "メールアドレス",
+      "message": "内容"
+    }
+  },
+  "EmailTemplate": {
+    "ContactConfirmation": {
+      "subject": "お問い合わせありがとうございます",
+      "greeting": "こんにちは {name} さん、",
+      "body": "お問い合わせいただきありがとうございます。ご入力いただいたメールアドレスに返信いたしますので、しばらくお待ちください。",
+      "name": "お名前",
+      "email": "メールアドレス",
+      "message": "内容",
+      "closing": "よろしくお願いいたします。\n澤田奈美",
+      "site_name": "澤田奈美 ポートフォリオサイト"
+    },
+    "NewMessageNotification": {
+      "subject": "{name}さんからの新しいメッセージ",
+      "body": "{name} ({email}) から新しいメッセージを受け取りました:",
+      "name": "お名前",
+      "email": "メールアドレス",
+      "message": "内容",
+      "site_name": "澤田奈美 ポートフォリオサイト"
+    }
+  },
+  "FormStatus": {
+    "sending": "送信中...",
+    "success": "お問合せありがとうございます。メッセージ送信が完了しました。",
+    "error": "メッセージの送信中にエラーが発生しました。"
+  },
+  "FormValidation": {
+    "too_long": "{field}は最大{max}文字までです",
+    "too_short": "{field}は最低{min}文字必要です",
+    "required": "{field}は必須です",
+    "email_invalid": "有効なメールアドレスを入力してください"
+  },
   "Header": {
     "contact": "お問合せ",
     "resume": "履歴書",
