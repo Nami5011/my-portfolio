@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default async function Footer() {
   return (
-    <footer className="w-full pt-6 pb-7 md:h-20 md:p-0">
+    <footer className="w-full pt-6 pb-7 md:h-20 md:p-0 bg-white dark:bg-gray-c">
       <div className="w-full h-full max-w-270 mx-auto flex flex-col md:flex-row items-center gap-2 md:gap-6">
         <Link href="/" className="h-max flex items-center mb-2 md:mb-0">
           <Image

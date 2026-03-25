@@ -33,7 +33,7 @@ export default function RecentWork() {
 
             <h3 className="text-[16px] font-bold leading-[1.2]">{t(work.title)}</h3>
             <p className="text-[16px] font-bold mb-2 leading-[1.2]">{t(work.company_name)}</p>
-            <p className="text-[14px] leading-[1.2]">{t(work.description)}</p>
+            <p className="text-[14px] leading-[1.2] whitespace-pre-line">{t(work.description)}</p>
             <Link url={work.link_url} title={work.link_title} />
           </WorkCardWrapper>
         ))}
