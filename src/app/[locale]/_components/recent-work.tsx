@@ -10,7 +10,6 @@ import skillListData from '@/data/skills.json';
 import { Skill } from '@/types/skills';
 import { RecentWork as RecentWorkType } from '@/types/recent_work';
 import { useState, useEffect } from 'react';
-import PrimaryButtonLink from '@/components/ui/shared/buttons/primary-button-link';
 import { Locale } from '@/types/locale';
 import SecondaryButtonLink from '@/components/ui/shared/buttons/secondary-button-link';
 import { useRef } from 'react';
@@ -25,7 +24,7 @@ export default function RecentWork() {
 
   return (
     <section ref={ref} className={`w-full py-10 md:py-20 overflow-hidden`}>
-      <div className="px-4 mb-13">
+      <div className="px-4 mb-4 md:mb-13">
         <H2 h2={t('recent_work.heading')} description={t('recent_work.description')} />
       </div>
       <div className="w-full md:w-max mx-auto grid grid-cols-1 justify-center md:grid-cols-2 gap-4 px-4">

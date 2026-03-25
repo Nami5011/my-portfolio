@@ -1,10 +1,8 @@
 import { cn } from '@/lib/utils';
-import { Locale } from '@/types/locale';
-import { getLocale, getTranslations } from 'next-intl/server';
+import { getTranslations } from 'next-intl/server';
 
 export default async function About() {
   const t = await getTranslations('HomePage');
-  const locale = await getLocale();
 
   return (
     <section className="md:max-w-225 w-full mx-auto flex justify-between items-start gap-4 flex-col py-10 md:py-20 md:flex-row px-4 lg:px-0">
@@ -12,17 +10,12 @@ export default async function About() {
         <h2
           className={cn(
             'font-onest text-4xl md:text-5xl font-medium leading-none mb-2',
-            locale === Locale.JA && 'font-noto-sans-jp md:text-4xl',
+            'ja:font-noto-sans-jp ja:text-[32px] md:ja:text-4xl',
           )}
         >
           {t('about.name')}
         </h2>
-        <p
-          className={cn(
-            'text-2xl md:text-[28px] leading-none mb-4',
-            locale === Locale.JA && 'text-xl md:text-2xl',
-          )}
-        >
+        <p className={cn('text-2xl md:text-[28px] leading-none mb-4', 'ja:text-xl md:ja:text-2xl')}>
           {t('about.occupation')}
         </p>
         <div className="w-full md:w-97.5 h-72 bg-gray-300">Photo here</div>

@@ -1,11 +1,9 @@
 import PrimaryButtonLink from '@/components/ui/shared/buttons/primary-button-link';
 import { cn } from '@/lib/utils';
-import { Locale } from '@/types/locale';
-import { getLocale, getTranslations } from 'next-intl/server';
+import { getTranslations } from 'next-intl/server';
 
 export default async function Contact() {
   const t = await getTranslations('HomePage.cta_bottom');
-  const locale = await getLocale();
 
   return (
     <section
@@ -20,7 +18,7 @@ export default async function Contact() {
         <h2
           className={cn(
             'text-[40px] md:text-[64px] font-onest font-bold leading-none mb-4 whitespace-pre-line',
-            locale === Locale.JA && 'font-noto-sans-jp leading-[1.1] md:text-[60px]',
+            'ja:font-noto-sans-jp ja:text-[36px] md:ja:text-[50px] ja:leading-[1.1]',
           )}
         >
           {t('heading')}
@@ -28,7 +26,7 @@ export default async function Contact() {
         <p
           className={cn(
             'text-[24px] mb-6 md:mb-8 leading-[1.1]',
-            locale === Locale.JA && 'text-[20px] leading-[1.2]',
+            'ja:text-[20px] ja:leading-[1.2]',
           )}
         >
           {t('description')}
@@ -36,7 +34,7 @@ export default async function Contact() {
         <PrimaryButtonLink
           href="/contact"
           message={t('send_message')}
-          className="w-62.5 h-11.5 md:h-14 text-[18px] md:text-[22px]"
+          className="w-50 h-11.5 md:h-14 md:w-62.5 text-[18px] md:text-[22px] md:ja:text-[20px]"
         />
       </div>
     </section>

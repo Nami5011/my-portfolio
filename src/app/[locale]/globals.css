@@ -1,7 +1,9 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @import 'shadcn/tailwind.css';
-@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@config "../../../tailwind.config.js";
+/* @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@custom-variant ja (&:where(html[lang='ja'] *)); */
 
 :root {
   --font-onest: var(--font-onest);
