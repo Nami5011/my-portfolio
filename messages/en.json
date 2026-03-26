@@ -50,9 +50,11 @@
     "email_invalid": "Enter a valid email address"
   },
   "Header": {
+    "home": "Home",
     "contact": "Contact",
     "resume": "Resume",
-    "switchLanguage": "Japanese"
+    "switchLanguage": "Japanese",
+    "appearance": "Appearance"
   },
   "HomePage": {
     "meta_title": "Nami Sawada - Full-stack Web Developer",

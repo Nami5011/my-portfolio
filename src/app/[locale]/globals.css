@@ -52,6 +52,7 @@
   --color-black-always: #1d0506;
   --color-gray-c: #f5f5f5;
   --skill: #ffffff;
+  --menu-border: #c8c8c8;
 }
 
 [data-theme='dark'] {
@@ -97,6 +98,7 @@
   --color-black-c: #ffffff;
   --color-gray-c: #171717;
   --skill: #cccccc;
+  --menu-border: #696969;
 }
 
 @theme inline {
@@ -158,6 +160,7 @@
   --color-black-always: var(--color-black-always);
   --color-gray-c: var(--color-gray-c);
   --color-skill: var(--skill);
+  --color-menu-border: var(--menu-border);
 }
 
 body {

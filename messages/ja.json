@@ -53,9 +53,11 @@
     "email_invalid": "有効なメールアドレスを入力してください"
   },
   "Header": {
+    "home": "ホーム",
     "contact": "お問合せ",
     "resume": "履歴書",
-    "switchLanguage": "English"
+    "switchLanguage": "English",
+    "appearance": "テーマ"
   },
   "HomePage": {
     "meta_title": "澤田奈美 - フルスタックWEBエンジニア",

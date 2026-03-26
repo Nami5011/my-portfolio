@@ -4,10 +4,11 @@ import ThemeSwitcher from '@/components/ui/shared/header/theme-switcher';
 import { getLocale, getTranslations } from 'next-intl/server';
 import { Locale } from '@/types/locale';
 import SwitchLanguageLink from './switch-language-link';
+import MobileMenuButton from './mobile-menu-button';
+import MobileMenu from './mobile-menu';
 
 export default async function Header() {
   const locale = await getLocale();
-  // const locale = useLocale();
   const t = await getTranslations('Header');
 
   return (
@@ -51,7 +52,9 @@ export default async function Header() {
           <SwitchLanguageLink />
         </div>
         <ThemeSwitcher className="hidden md:flex" />
+        <MobileMenuButton />
       </div>
+      <MobileMenu />
     </header>
   );
 }
