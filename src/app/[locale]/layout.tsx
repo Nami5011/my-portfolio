@@ -11,6 +11,7 @@ import Header from '@/components/ui/shared/header/header';
 import Footer from '@/components/ui/shared/footer/footer';
 import { Toaster } from '@/components/ui/sonner';
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const notoSansJP = Noto_Sans_JP({
   variable: '--font-noto-sans-jp',
@@ -57,6 +58,7 @@ export default async function RootLayout({ children, params }: Props) {
           </ThemeProvider>
         </NextIntlClientProvider>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
