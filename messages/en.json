@@ -67,36 +67,37 @@
     "about": {
       "name": "Nami Sawada",
       "occupation": "Web Developer",
-      "description": "I’m a curious, results-driven web developer who enjoys tackling difficult challenges. I specialise in improving UI/UX and optimising SEO. Nothing motivates me more than seeing CVR increase and users satisfied with the product I work on.\n\nCurrently, I’m based in Bergen, Norway, working as an SEO manager and a marketer at Alt Japansk AS while pursuing a degree in IU International University online.\n\nPreviously, I lived in Tokyo and worked as a web developer for clients, including a fast-paced international startup and large Japanese companies. There, I worked closely with designers and their clients, bridging the gap between ideas and systems.\n\nOutside of work, you can find me hiking on the fjords, running outside at dawn, or having a cake and coffee with my friends at a cafe 🍰"
+      "description": "I’m a results-driven web developer who enjoys tackling difficult challenges. While I've worked on both frontend and backend development, I specialise in improving UI/UX and optimising SEO.\n\nCurrently, I’m based in Bergen, Norway, working as a marketer at Alt Japansk AS while pursuing a degree in IU International University online.\n\nPreviously, I lived in Tokyo and worked as a web developer for different clients, including a fast-paced international startup and large Japanese companies. I worked on SaaS products, B2C web apps, and public websites, focusing on performance, UI/UX improvements, and turning ideas into real products. \n\nOutside of work, you can find me hiking on the fjords, running outside at dawn, or having a cake and coffee with my friends at a cafe 🍰"
     },
     "skills": {
       "heading": "Skills",
-      "description": "I have a wide range of skills from working with clients in various environments, from legacy systems to modern technologies. Here are some of the tools and technologies I use."
+      "description": "I'm comfortable working with a wide range of environments from legacy systems to modern stacks, and can adapt to whatever your team uses. Here are some of the tools and technologies I use."
     },
     "recent_work": {
       "heading": "Recent Work",
-      "description": "I have worked on developing not only SaaS systems and B2C apps but also high graphic websites. You can find my full work history and the details in my resume.",
+      "description": "I have worked on developing not only SaaS systems and B2C apps but also design-focused websites. You can find my full work history and the details in my resume.",
       "altjapansk": {
-        "title": "SEO manager & marketer",
+        "title": "Marketer",
         "company_name": "Alt Japansk AS",
-        "description": "An E-commerce website that sells authentic Japanese items."
+        "description": "An E-commerce website offering authentic Japanese products.\nContribute to increasing organic traffic and sales through SEO optimization and content management."
       },
       "southamerica": {
         "title": "Frontend developer",
         "company_name": "",
-        "description": "An AI-powered SaaS app that manages your teams and projects, and optimises your work efficiency."
+        "description": "An AI-powered SaaS app for team and project management.\nFocused on implementing a highly customisable UI and developing content management features using a headless CMS."
       },
       "fullstack": {
         "title": "Fullstack developer",
         "company_name": "",
-        "description": "A recruiting company’s website that provides a job search functionality and informative content to engage their customers."
+        "description": "A recruiting platform with job search functionality and content to engage users.\nHandled both frontend and backend development, including landing pages, SEO optimization, and search functionality."
       },
       "mimanakiel": {
         "title": "Web developer",
         "company_name": "Mimana Kiel",
-        "description": "A modelling portfolio as a clean, minimalist website.\nDesign: Mimana & Nami\nDevelopment: Nami"
+        "description": "A clean, minimalist modelling portfolio website.\nWorked on both design and development.\nDesign: Mimana & Nami\nDevelopment: Nami"
       },
-      "see_resume": "See My Resume"
+      "see_resume": "See My Resume",
+      "show_more": "Show more"
     },
     "cta_bottom": {
       "heading": "Interested in\nworking together?",
