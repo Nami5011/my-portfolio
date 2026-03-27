@@ -30,12 +30,31 @@ export default function RecentWork() {
       <div className="w-full md:w-max mx-auto grid grid-cols-1 justify-center md:grid-cols-2 gap-4 px-4">
         {recent_work.map((work, index) => (
           <WorkCardWrapper key={index} work={work}>
-            <Skills skills={work.skills} index={index} shiftPixels={shiftPixels} />
+            {(expanded, setExpanded) => (
+              <>
+                <Skills skills={work.skills} index={index} shiftPixels={shiftPixels} />
 
-            <h3 className="text-[16px] font-bold leading-[1.2]">{t(work.title)}</h3>
-            <p className="text-[16px] font-bold mb-2 leading-[1.2]">{t(work.company_name)}</p>
-            <p className="text-[14px] leading-[1.2] whitespace-pre-line">{t(work.description)}</p>
-            <Link url={work.link_url} title={work.link_title} />
+                <h3 className="text-[16px] font-bold leading-[1.2] ">{t(work.title)}</h3>
+                {t(work.company_name) && (
+                  <p className="text-[16px] font-bold leading-[1.2]">{t(work.company_name)}</p>
+                )}
+                <WorkDescription
+                  description={t(work.description)}
+                  expanded={expanded}
+                  setExpanded={setExpanded}
+                />
+                {work.link_url && work.link_title && (
+                  <a
+                    href={work.link_url}
+                    className="text-[14px] mt-2 underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {work.link_title}
+                  </a>
+                )}
+              </>
+            )}
           </WorkCardWrapper>
         ))}
       </div>
@@ -43,59 +62,52 @@ export default function RecentWork() {
         <SecondaryButtonLink
           href="/contact"
           message={t('recent_work.see_resume')}
-          className="w-62.5 h-11.5 md:h-12.5 text-[16px] md:text-xl mx-auto mt-13"
+          className="w-62.5 h-11.5 md:h-12.5 text-[16px] md:text-xl mx-auto mt-8 md:mt-13"
         />
       )}
     </section>
   );
 }
 
-function WorkCardWrapper({ work, children }: { work: RecentWorkType; children: React.ReactNode }) {
-  const { theme = 'light' } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  const className = cn(
-    `w-full aspect-370/260 md:aspect-auto md:w-77.25 md:h-83.5 rounded-[6px] p-4 shadow-[0_0_6px_0_rgba(131,131,131,0.30)] dark:shadow-[0_0_6px_0_rgba(0,0,0,0.30)] relative
-      bg-position-[top_center] bg-no-repeat 
-      flex flex-col justify-end`,
-    work.link_url &&
-      'md:hover:scale-105 md:hover:shadow-[0_0_8px_0_rgba(131,131,131,0.45)] transition-all! duration-300!',
-  );
-
-  if (!mounted) {
-    return (
-      <div
-        className={className}
-        style={{
-          backgroundImage: `url(/images/recent_work/${work.image_file})`,
-          backgroundSize: 'cover',
-        }}
-      >
-        {children}
-      </div>
-    );
-  }
-
+function WorkCardWrapper({
+  work,
+  children,
+}: {
+  work: RecentWorkType;
+  children: (
+    expanded: boolean,
+    setExpanded: React.Dispatch<React.SetStateAction<boolean>>,
+  ) => React.ReactNode;
+}) {
+  const [expanded, setExpanded] = useState(false);
   return (
     <div
-      className={className}
-      style={
-        theme === 'light'
-          ? {
-              backgroundImage: `linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.95) 100%), url(/images/recent_work/${work.image_file})`,
-              backgroundSize: '110% 100%, cover',
-            }
-          : {
-              backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.95) 100%), url(/images/recent_work/${work.image_file})`,
-              backgroundSize: '110% 100%, cover',
-            }
-      }
+      className={cn(
+        `w-full aspect-370/260 md:aspect-auto md:w-77.25 md:h-83.5 rounded-[6px] relative
+      shadow-[0_0_10px_0_rgba(131,131,131,0.50)] dark:shadow-[0_0_10px_0_rgba(150,150,150,0.50)]
+      bg-position-[top_center] bg-no-repeat bg-cover 
+      group/card`,
+      )}
+      style={{
+        backgroundImage: `url(/images/recent_work/${work.image_file})`,
+      }}
     >
-      {children}
+      <div
+        className={cn(
+          'w-full h-full rounded-[5px] p-4',
+          'flex flex-col justify-end',
+          'transition-all! duration-300!',
+          'md:bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(255,255,255,0.95)_100%)]',
+          'md:dark:bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,rgba(0,0,0,0.95)_100%)]',
+          expanded
+            ? 'bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(255,255,255,0.80)_50%,rgba(255,255,255,0.95)_100%)] dark:bg-[linear-gradient(180deg,rgba(0,0,0,0.3)_0%,rgba(0,0,0,0.95)_100%)]'
+            : 'bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(255,255,255,0.95)_100%)] dark:bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,rgba(0,0,0,0.95)_100%)]',
+          'md:group-hover/card:bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(255,255,255,0.80)_50%,rgba(255,255,255,0.95)_100%)]',
+          'md:dark:group-hover/card:bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,rgba(0,0,0,0.80)_50%,rgba(0,0,0,0.95)_100%)]',
+        )}
+      >
+        {children(expanded, setExpanded)}
+      </div>
     </div>
   );
 }
@@ -139,21 +151,40 @@ function Skills({
   );
 }
 
-function Link({ url, title }: { url: string; title: string }) {
-  if (!url) return null;
+function WorkDescription({
+  description,
+  expanded,
+  setExpanded,
+}: {
+  description: string;
+  expanded: boolean;
+  setExpanded: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
+  if (!description) return null;
+  const t = useTranslations('HomePage.recent_work');
+
   return (
     <>
-      <a href={url} className="absolute inset-0" target="_blank" rel="noopener noreferrer">
-        <span className="sr-only">{title}</span>
-      </a>
-      <a
-        href={url}
-        className="text-[14px] mt-2 underline"
-        target="_blank"
-        rel="noopener noreferrer"
+      <p
+        className={cn(
+          'text-[14px] leading-[1.2] whitespace-pre-line mt-2 md:max-h-[2.1rem] overflow-hidden! transition-all! duration-800!',
+          'md:line-clamp-2',
+          'md:group-hover/card:max-h-75 md:group-hover/card:line-clamp-none',
+          !expanded ? 'line-clamp-2' : 'line-clamp-none',
+        )}
+        onClick={() => setExpanded(true)}
       >
-        {title}
-      </a>
+        {description}
+      </p>
+      {!expanded && (
+        <button
+          type="button"
+          onClick={() => setExpanded(true)}
+          className="block md:hidden text-[14px] leading-[1.2] cursor-pointer border-none bg-transparent underline text-left text-gray-800 dark:text-gray-300 mt-0.5"
+        >
+          {t('show_more')}
+        </button>
+      )}
     </>
   );
 }

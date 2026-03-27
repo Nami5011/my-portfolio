@@ -24,7 +24,7 @@ export default function SkillItemSquare({
   return (
     <div
       className={cn(
-        'size-6 md:size-15 rounded-[6px] p-px bg-[url(/images/skill_item_border2.svg)] bg-no-repeat bg-cover bg-center shadow-[0_0_6px_0_rgba(0,0,0,0.16)]',
+        'size-6 md:size-15 rounded-[6px] p-px bg-[linear-gradient(180deg,rgba(255,255,255,1)0%,rgba(255,255,255,1)100%)] md:bg-[url(/images/skill_item_border2.svg)] bg-no-repeat bg-cover bg-center shadow-[0_0_6px_0_rgba(0,0,0,0.16)]',
         !isChrome && 'bg-white', // Backdrop-filter Fallback for non-Chrome browsers
         className,
       )}

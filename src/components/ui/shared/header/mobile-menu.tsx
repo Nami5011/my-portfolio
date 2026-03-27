@@ -20,48 +20,48 @@ export default function MobileMenu() {
         isMenuOpen ? 'flex' : 'hidden',
       )}
     >
-      <div className="bg-white dark:bg-background rounded-[8px] py-4 w-full max-w-67.5 text-[14px]">
+      <div className="bg-white dark:bg-background rounded-[8px] py-4 w-full max-w-80 text-[16px]">
         <Link
           href="/"
-          className="h-10 w-full px-4 flex items-center justify-between hover:bg-gray-100 transition-background duration-200 dark:hover:bg-gray-800"
+          className="h-12.5 w-full px-4 flex items-center justify-between hover:bg-gray-100 transition-background duration-200 dark:hover:bg-gray-800"
           onClick={() => setIsMenuOpen(false)}
         >
           <span>{t('home')}</span>
-          <ChevronRight className="size-4 text-menu-border" />
+          <ChevronRight className="size-5 text-menu-border" />
         </Link>
         <hr className="mx-4 border-t border-menu-border" />
         <Link
           href="/contact"
-          className="h-10 w-full px-4 flex items-center justify-between hover:bg-gray-100 transition-background duration-200 dark:hover:bg-gray-800"
+          className="h-12.5 w-full px-4 flex items-center justify-between hover:bg-gray-100 transition-background duration-200 dark:hover:bg-gray-800"
           onClick={() => setIsMenuOpen(false)}
         >
           <span>{t('contact')}</span>
-          <ChevronRight className="size-4 text-menu-border" />
+          <ChevronRight className="size-5 text-menu-border" />
         </Link>
         <hr className="mx-4 border-t border-menu-border" />
         {locale === Locale.EN && (
           <Link
             href="/resume"
-            className="h-10 w-full px-4 flex items-center justify-between hover:bg-gray-100 transition-background duration-200 dark:hover:bg-gray-800"
+            className="h-12.5 w-full px-4 flex items-center justify-between hover:bg-gray-100 transition-background duration-200 dark:hover:bg-gray-800"
             target="_blank"
             rel="noopener noreferrer"
           >
             <span>{t('resume')}</span>
-            <ChevronRight className="size-4 text-menu-border" />
+            <ChevronRight className="size-5 text-menu-border" />
           </Link>
         )}
         <hr className="mx-4 border-t border-menu-border" />
         <Link
           href={pathname}
-          className="h-10 w-full px-4 flex items-center justify-between hover:bg-gray-100 transition-background duration-200 dark:hover:bg-gray-800"
+          className="h-12.5 w-full px-4 flex items-center justify-between hover:bg-gray-100 transition-background duration-200 dark:hover:bg-gray-800"
           locale={locale === Locale.EN ? Locale.JA : Locale.EN}
           onClick={() => setIsMenuOpen(false)}
         >
           <span>{t('switchLanguage')}</span>
-          <ChevronRight className="size-4 text-menu-border" />
+          <ChevronRight className="size-5 text-menu-border" />
         </Link>
         <hr className="mx-4 border-t border-menu-border" />
-        <div className="h-11 px-4 w-full flex justify-between items-center ">
+        <div className="h-12.5 px-4 w-full flex justify-between items-center ">
           <span>{t('appearance')}</span>
           <ThemeSwitcher />
         </div>
