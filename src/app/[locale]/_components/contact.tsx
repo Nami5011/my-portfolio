@@ -34,7 +34,7 @@ export default async function Contact() {
         <PrimaryButtonLink
           href="/contact"
           message={t('send_message')}
-          className="w-50 h-11.5 md:h-14 md:w-62.5 text-[18px] md:text-[22px] md:ja:text-[20px]"
+          className="w-max min-w-50 h-11.5 md:h-14 px-8 text-[18px] md:text-[20px]"
         />
       </div>
     </section>

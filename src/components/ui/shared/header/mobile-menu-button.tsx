@@ -2,8 +2,17 @@
 
 import { useMenuStore } from '@/store/use-menu-store';
 import { Menu, X } from 'lucide-react';
+import { useEffect } from 'react';
 export default function MobileMenuButton() {
   const { isMenuOpen, setIsMenuOpen } = useMenuStore();
+  useEffect(() => {
+    if (typeof document === 'undefined') return;
+    if (isMenuOpen) {
+      document.body.classList.add('no-scroll-fixed');
+    } else {
+      document.body.classList.remove('no-scroll-fixed');
+    }
+  }, [isMenuOpen]);
 
   return (
     <button

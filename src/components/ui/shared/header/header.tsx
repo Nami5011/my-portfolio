@@ -12,7 +12,7 @@ export default async function Header() {
   const t = await getTranslations('Header');
 
   return (
-    <header className="sticky w-full h-12.5 top-0 left-0 flex justify-center bg-white dark:bg-gray-c z-100 shadow-sm">
+    <header className="sticky w-full h-14 top-0 left-0 flex justify-center bg-white dark:bg-gray-c z-100 shadow-sm">
       <div className="w-full max-w-270 mx-auto px-4 lg2:px-0 flex items-center gap-4">
         <Link href="/" className="h-full flex items-center">
           <Image

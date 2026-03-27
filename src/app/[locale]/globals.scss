@@ -19,3 +19,7 @@
     padding-right: 8px;
   }
 }
+
+body.no-scroll-fixed {
+  overflow: hidden;
+}
