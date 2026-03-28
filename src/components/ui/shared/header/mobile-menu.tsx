@@ -39,18 +39,6 @@ export default function MobileMenu() {
           <ChevronRight className="size-5 text-menu-border" />
         </Link>
         <hr className="mx-4 border-t border-menu-border" />
-        {locale === Locale.EN && (
-          <Link
-            href="/resume"
-            className="h-12.5 w-full px-4 flex items-center justify-between hover:bg-gray-100 transition-background duration-200 dark:hover:bg-gray-800"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span>{t('resume')}</span>
-            <ChevronRight className="size-5 text-menu-border" />
-          </Link>
-        )}
-        <hr className="mx-4 border-t border-menu-border" />
         <Link
           href={pathname}
           className="h-12.5 w-full px-4 flex items-center justify-between hover:bg-gray-100 transition-background duration-200 dark:hover:bg-gray-800"

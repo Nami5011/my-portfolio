@@ -58,13 +58,6 @@ export default function RecentWork() {
           </WorkCardWrapper>
         ))}
       </div>
-      {locale === Locale.EN && (
-        <SecondaryButtonLink
-          href="/contact"
-          message={t('recent_work.see_resume')}
-          className="w-max px-8 min-w-50 h-11.5 md:h-12.5 text-[18px] mx-auto mt-8 md:mt-13"
-        />
-      )}
     </section>
   );
 }

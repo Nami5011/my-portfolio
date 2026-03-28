@@ -39,16 +39,6 @@ export default async function Header() {
           >
             {t('contact')}
           </Link>
-          {locale === Locale.EN && (
-            <Link
-              href="/resume"
-              className="px-4 h-full flex items-center text-[14px] hover:bg-gray-100 transition-background duration-200 dark:hover:bg-gray-800"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {t('resume')}
-            </Link>
-          )}
           <SwitchLanguageLink />
         </div>
         <ThemeSwitcher className="hidden md:flex" />
