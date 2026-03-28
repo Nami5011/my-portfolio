@@ -9,6 +9,7 @@ import { createTranslator } from 'next-intl';
 import { NextRequest, NextResponse } from 'next/server';
 import { randomUUID } from 'node:crypto';
 const fromEmail = process.env.EMAIL_FROM || '';
+const managementEmail = process.env.EMAIL_MANAGEMENT || '';
 const ratelimit = createRateLimiter(5, '1 m', '/api/send-email');
 
 export async function POST(req: NextRequest) {
@@ -42,7 +43,7 @@ export async function POST(req: NextRequest) {
     );
     const { data: notificationResponseData, error: notificationError } = await resend.emails.send({
       from: `${t('FromName')} <${fromEmail}>`,
-      to: [fromEmail],
+      to: [managementEmail],
       subject: t('NewMessageNotification.subject', { name }),
       html: notificationEmailHtml,
       headers: {
