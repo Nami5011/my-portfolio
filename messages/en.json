@@ -63,16 +63,16 @@
     "title": "Better UX.\nMore sales.\nHappier customers.",
     "subtitle1": "I’m ",
     "subtitle2": "Nami Sawada",
-    "subtitle3": ", and I help you achieve this.",
+    "subtitle3": ", and I can help you achieve this.",
     "contact": "Contact",
     "about": {
       "name": "Nami Sawada",
       "occupation": "Web Developer",
-      "description": "I’m a results-driven web developer who enjoys tackling difficult challenges. While I've worked on both frontend and backend development, I specialise in improving UI/UX and optimising SEO.\n\nCurrently, I’m based in Bergen, Norway, working as a marketer at Alt Japansk AS while pursuing a degree in IU International University online.\n\nPreviously, I lived in Tokyo and worked as a web developer for different clients, including a fast-paced international startup and large Japanese companies. I worked on SaaS products, B2C web apps, and public websites, focusing on performance, UI/UX improvements, and turning ideas into real products. \n\nOutside of work, you can find me hiking on the fjords, running outside at dawn, or having a cake and coffee with my friends at a cafe 🍰"
+      "description": "I’m a results-driven web developer who enjoys tackling difficult challenges. While I've worked on both frontend and backend development, I specialise in improving UI/UX and optimising SEO.\n\nCurrently, I’m based in Bergen, Norway, working as a marketer at Alt Japansk AS while pursuing a degree through IU International University online.\n\nWhen previously living in Tokyo, I worked as a web developer for different clients, including a fast-paced international startup and large Japanese companies. I worked on SaaS products, B2C web apps, and public websites, focusing on performance, UI/UX improvements, and turning ideas into real products. \n\nOutside of work, you can find me hiking the fjords, running outside at dawn, or having a cake and coffee with my friends at a cafe 🍰"
     },
     "skills": {
       "heading": "Skills",
-      "description": "I'm comfortable working with a wide range of environments from legacy systems to modern stacks, and can adapt to whatever your team uses. Here are some of the tools and technologies I use."
+      "description": "I'm comfortable working with a wide range of environments from legacy systems to modern stacks, and can adapt to whatever your team utilises. Here are some of the tools and technologies I use."
     },
     "recent_work": {
       "heading": "Recent Work",
@@ -80,7 +80,7 @@
       "altjapansk": {
         "title": "Marketer",
         "company_name": "Alt Japansk AS",
-        "description": "An E-commerce website offering authentic Japanese products.\nContribute to increasing organic traffic and sales through SEO optimization and content management."
+        "description": "An E-commerce website offering authentic Japanese products.\nContribute to increasing organic traffic and sales through SEO optimisation and content management."
       },
       "southamerica": {
         "title": "Frontend developer",
@@ -90,7 +90,7 @@
       "fullstack": {
         "title": "Fullstack developer",
         "company_name": "",
-        "description": "A recruiting platform with job search functionality and content to engage users.\nHandled both frontend and backend development, including landing pages, SEO optimization, and search functionality."
+        "description": "A recruiting platform with job search functionality and content to engage users.\nHandled both frontend and backend development, including landing pages, SEO optimisation, and search functionality."
       },
       "mimanakiel": {
         "title": "Web developer",
