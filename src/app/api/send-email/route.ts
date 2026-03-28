@@ -46,7 +46,7 @@ export async function POST(req: NextRequest) {
       subject: t('NewMessageNotification.subject', { name }),
       html: notificationEmailHtml,
       headers: {
-        'X-Entity-Ref-ID': `<${randomUUID()}@${process.env.VERCEL_URL || 'localhost'}>`,
+        'X-Entity-Ref-ID': `<${randomUUID()}@${process.env.APP_URL || 'localhost'}>`,
       },
     });
     if (notificationError) {
@@ -67,7 +67,7 @@ export async function POST(req: NextRequest) {
       subject: t('ContactConfirmation.subject', { name }),
       html: confirmationEmailHtml,
       headers: {
-        'X-Entity-Ref-ID': `<${randomUUID()}@${process.env.VERCEL_URL || 'localhost'}>`,
+        'X-Entity-Ref-ID': `<${randomUUID()}@${process.env.APP_URL || 'localhost'}>`,
       },
     });
     if (confirmationError) {
