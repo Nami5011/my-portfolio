@@ -22,6 +22,7 @@
     }
   },
   "EmailTemplate": {
+    "FromName": "澤田 奈美",
     "ContactConfirmation": {
       "subject": "お問い合わせありがとうございます",
       "greeting": "こんにちは {name} さん、",

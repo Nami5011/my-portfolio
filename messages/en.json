@@ -19,6 +19,7 @@
     }
   },
   "EmailTemplate": {
+    "FromName": "Nami Sawada",
     "ContactConfirmation": {
       "subject": "Thank you for contacting me",
       "greeting": "Hello {name},",

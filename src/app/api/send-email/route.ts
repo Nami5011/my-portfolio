@@ -3,7 +3,7 @@ import NewMessageNotificationEmailTemplate from '@/components/email/new-message-
 import { createRateLimiter } from '@/lib/ratelimit';
 import { resend } from '@/lib/resend';
 import { contactFormSchema } from '@/lib/validation_schemas/contact-schemas';
-import { Locale } from '@/types/locale';
+import { Locale, locales } from '@/types/locale';
 import { render } from '@react-email/render';
 import { createTranslator } from 'next-intl';
 import { NextRequest, NextResponse } from 'next/server';
@@ -29,7 +29,7 @@ export async function POST(req: NextRequest) {
     }
     const { name, email, message } = validatedData.data;
 
-    const currentLocale = body.locale in Locale ? body.locale : Locale.EN;
+    const currentLocale = locales.includes(body.locale) ? (body.locale as Locale) : Locale.EN;
     const t = createTranslator({
       messages: await import(`../../../../messages/${currentLocale}.json`),
       namespace: 'EmailTemplate',
@@ -41,7 +41,7 @@ export async function POST(req: NextRequest) {
       NewMessageNotificationEmailTemplate({ name, email, message, locale: currentLocale }),
     );
     const { data: notificationResponseData, error: notificationError } = await resend.emails.send({
-      from: fromEmail,
+      from: `${t('FromName')} <${fromEmail}>`,
       to: [fromEmail],
       subject: t('NewMessageNotification.subject', { name }),
       html: notificationEmailHtml,
@@ -62,7 +62,7 @@ export async function POST(req: NextRequest) {
       ContactConfirmationEmailTemplate({ name, email, message, locale: currentLocale }),
     );
     const { data: confirmationResponseData, error: confirmationError } = await resend.emails.send({
-      from: fromEmail,
+      from: `${t('FromName')} <${fromEmail}>`,
       to: [email],
       subject: t('ContactConfirmation.subject', { name }),
       html: confirmationEmailHtml,
