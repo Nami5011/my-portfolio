@@ -1,4 +1,4 @@
-import { Locale } from '@/types/locale';
+import { Locale, locales } from '@/types/locale';
 import {
   Body,
   Container,
@@ -32,7 +32,7 @@ export default async function NewMessageNotificationEmailTemplate({
   message,
   locale = Locale.EN,
 }: EmailTemplateProps) {
-  if (!(locale in Locale)) {
+  if (!locales.includes(locale)) {
     locale = Locale.EN;
   }
   const t = createTranslator({
