@@ -1,6 +1,8 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} keeps Upstash active
 on: [push]
+schedule:
+  - cron: '0 9 * * 5' # Runs every Friday at 9
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
